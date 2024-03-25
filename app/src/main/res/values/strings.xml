@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Trial_app</string>
+    <string name="log_in">Log in</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="keep_me_signed_in">Keep me signed in</string>
+    <string name="log_in_done">Log in</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="dont_have_an_account">Don’t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create_account">Create account</string>
+    <string name="email_address_create_activity">Email address</string>
+    <string name="password_create_activity">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="sign_up_create_activity">Sign up</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="log_in_create">Log in</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="email_address_forgot_page">Email address</string>
+    <string name="reset_my_password">Reset my password</string>
+    <string name="change_password">Change password</string>
+    <string name="change_password_button">Change password</string>
+    <string name="confirm_password_hint">Confirm password</string>
+    <string name="new_password_change_page">New password</string>
+</resources>
