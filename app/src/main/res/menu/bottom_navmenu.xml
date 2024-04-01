@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/app_bar_search"
+            android:title="@string/search"
+            android:icon="@drawable/baseline_search_24"/>
+
+    <item
+            android:id="@+id/home"
+            android:title="@string/homeMenu"
+            android:icon="@drawable/rounded_home_24"
+       />
+    <item
+            android:id="@+id/add"
+            android:title="@string/add"
+            android:icon="@drawable/add_24"/>
+
+    <item
+            android:id="@+id/profile"
+            android:title="@string/profile"
+            android:icon="@drawable/profile_24"/>
+</menu>

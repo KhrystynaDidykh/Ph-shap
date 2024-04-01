@@ -10,6 +10,13 @@ import android.widget.CheckBox;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import com.example.trial_app.service.LoginService;
+import com.google.gson.Gson;
+import okhttp3.*;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText userEmaiEditText;
@@ -42,7 +49,17 @@ public class LoginActivity extends AppCompatActivity {
                     return;
                 }
                 //  login logic
-
+                JSONObject jsonObject = new JSONObject();
+                try {
+                    jsonObject.put("email", username);
+                    jsonObject.put("password", password);
+                } catch (JSONException e) {
+                    throw new RuntimeException(e);
+                }
+                Response response = LoginService.post("http://127.0.0.1:8000/api/user/login", jsonObject.toString());
+                if(response.code() == 200) {
+                    
+                }
                 String message = "Username: " + username + "\nPassword: " + password;
                 Toast.makeText(LoginActivity.this, message, Toast.LENGTH_SHORT).show();
             }

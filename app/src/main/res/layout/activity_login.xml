@@ -16,6 +16,7 @@
             android:id="@+id/log_in"
             android:text="@string/log_in"
             android:layout_width="100dp"
+            android:fontFamily="@font/roboto_medium"
             android:layout_height="50dp"
             android:gravity="center"
             android:textSize="32sp"
@@ -44,7 +45,8 @@
             android:layout_marginTop="246dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.036"/>
+            app:layout_constraintVertical_bias="0.036"
+            android:fontFamily="@font/roboto"/>
 
     <EditText
             android:id="@+id/editTextNumberPassword"
@@ -63,7 +65,8 @@
             android:layout_marginTop="319dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.021"/>
+            app:layout_constraintVertical_bias="0.021"
+            android:fontFamily="@font/roboto"/>
     <TextView
             android:id="@+id/ForgotYourPassword"
             android:layout_width="180dp"
@@ -78,7 +81,7 @@
             android:layout_marginTop="380dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.93"
-            app:layout_constraintVertical_bias="0.033"/>
+            app:layout_constraintVertical_bias="0.033" android:fontFamily="@font/roboto"/>
     <TextView
             android:id="@+id/DontHaveAccount"
             android:layout_width="180dp"
@@ -86,10 +89,14 @@
             android:text="@string/dont_have_an_account"
             android:textStyle="normal"
             android:textSize="14sp"
-            tools:ignore="MissingConstraints" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.393"
-            app:layout_constraintVertical_bias="0.952"/>
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.393"
+            app:layout_constraintVertical_bias="0.952"
+            android:fontFamily="@font/roboto"/>
     <TextView
             android:id="@+id/signUp"
             android:layout_width="95dp"
@@ -98,10 +105,14 @@
             android:textStyle="bold"
             android:textSize="14sp"
             android:textColor="@color/blue"
-            tools:ignore="MissingConstraints" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.806"
-            app:layout_constraintVertical_bias="0.969"/>
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.806"
+            app:layout_constraintVertical_bias="0.969"
+            android:fontFamily="@font/roboto_bold"/>
     <CheckBox
             android:id="@+id/checkBox"
             android:text="@string/keep_me_signed_in"
@@ -115,7 +126,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_bias="0.127"
-            app:layout_constraintVertical_bias="0.534"/>
+            app:layout_constraintVertical_bias="0.534"
+            android:fontFamily="@font/roboto_medium"/>
     <Button
             android:id="@+id/button"
             android:text="@string/log_in_done"
@@ -127,11 +139,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             tools:ignore="MissingConstraints"
-            app:layout_constraintHorizontal_bias="0.494"
-            android:layout_marginTop="514dp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.041"/>
+            app:layout_constraintVertical_bias="0.883"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintBottom_toTopOf="@+id/DontHaveAccount"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
